@@ -7,7 +7,7 @@ module.exports = {
   owner: { nombre: 'Fco Ignacio Becerra Castaño', nif: '75956182Q', email: 'contacto@euriborclaro.com' },
 
   // Google AdSense: pon tu ID (ca-pub-XXXXXXXXXXXXXXXX) cuando te aprueben
-  adsenseClient: '',
+  adsenseClient: 'ca-pub-9909378168348386',
 
   // Enlace de afiliado hipotecario (bróker / comparador). Vacío = no se muestra.
   affiliate: {
