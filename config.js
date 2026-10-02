@@ -4,7 +4,7 @@ module.exports = {
   // URL final de la web, sin barra al final (necesaria para el sitemap y SEO)
   siteUrl: 'https://euriborclaro.com',
   // Datos del titular para el aviso legal
-  owner: { nombre: 'TU NOMBRE', nif: 'TU NIF', email: 'contacto@euriborclaro.com' },
+  owner: { nombre: 'Fco Ignacio Becerra Castaño', nif: '75956182Q', email: 'contacto@euriborclaro.com' },
 
   // Google AdSense: pon tu ID (ca-pub-XXXXXXXXXXXXXXXX) cuando te aprueben
   adsenseClient: '',
