@@ -92,7 +92,8 @@ function layout({ title, description, ruta, body, extraHead = '' }) {
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>€</text></svg>">
 <link rel="stylesheet" href="/styles.css">
-${cfg.adsenseClient ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${cfg.adsenseClient}" crossorigin="anonymous"></script>` : ''}
+${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${cfg.adsenseClient}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${cfg.adsenseClient}" crossorigin="anonymous"></script>` : ''}
 ${extraHead}
 </head>
 <body>
