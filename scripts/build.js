@@ -90,7 +90,9 @@ function layout({ title, description, ruta, body, extraHead = '' }) {
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${description}">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>€</text></svg>">
+<meta property="og:image" content="${cfg.siteUrl}/logo.png">
+<link rel="icon" type="image/png" href="/icono.png">
+<link rel="apple-touch-icon" href="/icono.png">
 <link rel="stylesheet" href="/styles.css">
 ${cfg.adsenseClient ? `<meta name="google-adsense-account" content="${cfg.adsenseClient}">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${cfg.adsenseClient}" crossorigin="anonymous"></script>` : ''}
@@ -98,7 +100,7 @@ ${extraHead}
 </head>
 <body>
 <header class="top"><div class="wrap">
-<a class="logo" href="/">Euríbor<span>Claro</span></a>
+<a class="logo" href="/"><img src="/icono.png" width="30" height="30" alt="">Euríbor<span>Claro</span></a>
 <nav><a href="/">Hoy</a><a href="/calculadora/">Calculadora</a><a href="/historico/">Histórico</a></nav>
 </div></header>
 <main class="wrap">
