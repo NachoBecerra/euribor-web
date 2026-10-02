@@ -152,6 +152,8 @@ fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
 fs.copyFileSync(path.join(ROOT, 'src/styles.css'), path.join(DIST, 'styles.css'));
 fs.copyFileSync(path.join(ROOT, 'src/explorador.js'), path.join(DIST, 'explorador.js'));
+// public/: archivos que se publican tal cual en la raíz (verificaciones de Google, etc.)
+fs.cpSync(path.join(ROOT, 'public'), DIST, { recursive: true });
 
 const ult = mensual[mensual.length - 1];
 const ant = valorMes(mesMenos(ult.mes, 1));
